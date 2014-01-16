@@ -5,7 +5,6 @@
 <meta charset="utf-8">
 <title>Hao Xu</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen" />
-<!---  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" /> -->
   <script src="javascripts/bootstrap.min.js"></script>
 
 </head>
@@ -17,10 +16,10 @@
 
 <br>
 <h3>About</h3>
-<p>I am a third year Master student at University of Chinese Academy of Sciences(UCAS), advised by Prof. Min Zhu. I work with a number of chill and smart people in the NetSys lab. 
+<p>I am a third year Master student at University of Chinese Academy of Sciences(UCAS), advised by Prof. Min Zhu. I work with a number of chill and smart people in the Ocean Acoustic Technology lab. 
 </p>
 <p>
-Previously,  I earned my bachelor degree in Telecommunication Engineering from Wuhan University of Technology (aka WUT) in 2011. My research interests are mainly about mobile computing, cyber security and detection techniques. I also love Mathematics, Algorithm and Programming.
+Previously,  I earned my bachelor degree in Telecommunication Engineering from Wuhan University of Technology (aka WUT) in 2011. My research interests are mainly about signal processing detection techniques and mobile sensing systems. I also love Mathematics, Football and Programming.
 </p>
 <br>
 
@@ -54,8 +53,9 @@ Sciencepaper Online<br>
 			<td class="times_14pt_pre" valign="middle">
 			<strong>Underwater acoustic communication system for manned deep submersible JiaoLong. (The First manned subsmersible for China )</strong> <p class="margin_bottom_6px">Underwater acoustic transmission of images, human voice, data and texts between vehicle under 7000m depth and surface ship was accomplished of this underwater acoustic communication system.
 </p>
-			<li class="none_style"><i class="icon-chevron-right"></i> Processed the data received from all sea trials, address the communication problems caused by the deep sea acoustic channel. Proposed soft iterated channel estimation with phase locked loop to track the channel response with rapid phase variation in underwater acoustic communication.</li>
-			<li class="none_style"><i class="icon-chevron-right"></i> Developed the more reliable turbo equalization based on the channel estimation for deep sea coherent communication channel.</li>
+			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Processed the data received from all sea trials, address the communication problems caused by the deep sea acoustic channel.</li>
+			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Developed the more reliable turbo equalization based on the channel estimation for deep sea coherent communication channel.</li>
+			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Proposed soft iterated channel estimation with phase locked loop to track the channel response with rapid phase variation in underwater acoustic communication.</li>
 <p class="margin_bottom_6px">
 			This project is funded by the National 863 High-Tech Foundation, PI: Min Zhu. </p>
 <p class="margin_bottom_6px">
@@ -85,13 +85,7 @@ Research News:
 			<td class="times_14pt_pre" valign="middle">
 						<p class="margin_bottom_6px">
 			<strong>Underwater acoustic network, Signal processing in physical layer communication
-</strong> 
-			Electromagnetic
-waves can’t be used for data transmission in the ocean, so underwater wireless networks are generally
-formed by acoustically connected ocean-bottom sensors, autonomous underwater vehicles, and a surface
-station, which provides a link to control center. Shallow water acoustic channel characteristics, such as
-low available bandwidth, highly varying multipath, and large propagation delays, restrict the efficiency
-of UWA networks. My work is concentrated on Time reversal and Turbo equalization.</p>
+</strong> <p class="margin_bottom_6px">Electromagnetic waves can’t be used for data transmission in the ocean, so underwater wireless networks are generally formed by acoustically connected ocean-bottom sensors, autonomous underwater vehicles, and a surface station, which provides a link to control center. Shallow water acoustic channel characteristics, such as low available bandwidth, highly varying multipath, and large propagation delays, restrict the efficiency of UWA networks. My work is concentrated on Time reversal and Turbo equalization.</p>
 			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Investigated time-reversal multi-channel combining which can retrace incoming multiple paths in
 large delay spread channels to simplify the underwater acoustic communication equalization. Proposed
 whitening filters based on AR process to develop colored gaussian noise into white gaussian noise, which
@@ -105,11 +99,6 @@ GUI on computer to diagnose and supervise the whole aquatic network.</li>
 
 <p class="margin_bottom_6px">
 			This project is funded by the National 863 High-Tech Foundation, PI: Min Zhu. </p>
-<p class="margin_bottom_6px">
-Research News: 
-<a href="http://www.stevens.edu/news/content/stevens-researcher-wins-nsf-grant-mobile-healthcare-application">
-Stevens News</a>,
-<a href="http://www.mhimss.org/press-release/stevens-researcher-wins-nsf-grant-mobile-healthcare-application">Mobile Healthcare Information and Management Systems Society News</a></p>
 
 			</td>
 		</tr>
@@ -127,12 +116,11 @@ Stevens News</a>,
 
 			<p class="margin_bottom_6px">
 			<strong>Robot for Robot Wars Competition.</strong>
-We design a powerful robot to participate in the famous Robocup Competition (just like the famous TV show: Robot Wars). This kind of robot needs
-to detect the own positions and the opponet on a fixed platform, then the robot push the opponent away from the platform for victory. To meet these needs, we used the circuits of the microcontroller and sensors, the efficient control algorithm to attact the opponent. Besides, our local computer would record the data from the robot in competition from the platform by the wireless RF module.
-<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the hardware of sensor circuits like grey sensors (to detect the position on the grey platform), Infrared distance sensors(to detect the opponent), the circuits of microcontroller.</li>
-<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the software of processing the signal from the sensors to provide reliable information to the
-controller. Advanced scheme is realized in the control program for victory in competition. Programmed
-the software on STM32 microcontroller.</li>
+<p>We design a powerful robot to participate in the famous Robocup Competition (just like the famous TV show: Robot Wars). This kind of robot needs
+to detect the own positions and the opponet on a fixed platform, then the robot push the opponent away from the platform for victory. To meet these needs, we used the circuits of the microcontroller and sensors, the efficient control algorithm to attact the opponent. Besides, our local computer would record the data from the robot in competition from the platform by the wireless RF module.</p>
+<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the microcontroller boards to control wireless module, color LCD display, RAM/Flash interface.
+</li>
+<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the scheme to make all wireless link operate successful. Programmed on FPGA to realize the complicated DSP algorithm like FIR filters, FFT for data processing.</li>
 </p>
 			<p class="margin_bottom_6px">
 			This project won the first prize in national Robocup competition.</p>
